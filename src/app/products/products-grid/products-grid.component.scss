@@ -3,6 +3,16 @@
   gap: 1rem;
 }
 
+.search-field {
+  display: block;
+  width: 100%;
+}
+
+.search-preview {
+  margin: 0;
+  color: var(--mat-sys-on-surface-variant);
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -35,4 +45,20 @@
     margin: 0;
     color: var(--mat-sys-on-surface-variant);
   }
+}
+
+.demo-item.even-row {
+  background: color-mix(in srgb, var(--mat-sys-primary) 6%, transparent);
+}
+
+.demo-item.odd-row {
+  background: color-mix(in srgb, var(--mat-sys-outline) 6%, transparent);
+}
+
+.demo-item.first-item {
+  outline: 2px solid var(--mat-sys-primary);
+}
+
+.demo-item.last-item {
+  outline: 2px dashed var(--mat-sys-outline);
 }
