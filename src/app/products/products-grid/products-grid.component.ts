@@ -52,9 +52,13 @@ export class ProductsGridComponent {
     );
   });
 
-  protected clearSearch() {
-    this.searchTerm.set('');
+  protected onAddToCard(product: Product): void {
+    console.log('Added to cart: ', product.name);
   }
+
+  // protected clearSearch() {
+  //   this.searchTerm.set('');
+  // }
 
   // protected trimSearch() {
   //   this.searchTerm.update((value) => value.trim());
